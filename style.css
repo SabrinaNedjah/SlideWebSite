@@ -2,7 +2,7 @@ body {
 	margin: 0; padding: 0; 
 	overflow: hidden; 
 	color: #fff;
-	background: #000;
+	background: #EC9A02;
 }
 
 #contener {
@@ -47,30 +47,63 @@ body {
 
 /* Contenus des slides */
 .slide_inside {
-	width: 500px;
+	width: 50%;
+	height: 50%;
 	margin: 0 auto;
 	position: relative;
-	background-color: rgba(0, 0, 0, .6);
+	background-color: rgba(255, 0, 0, 0.6);
 	padding: 50px;
 }
 
 #slide1 .slide_inside {
-	text-align: center;
-	background-color: transparent;
+	margin-top: 0;
+	float: left;
 }
-#slide2 .slide_inside p {
-	width: 400px;
-	text-align: justify;
+#slide2 .slide_inside {
+	margin-top: 0;
+	float: right;
 }
+
 #slide3 .slide_inside {
-	margin-top: 140px;
+	margin-top: 0;
+	float: left;
 }
 
 #slide4 .slide_inside {
-	margin-top: 140px; }
+	float: right;
+	margin-top: 0; }
+
+
+.slide__inside {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	background-color: rgba(68, 0, 255, 0.6);
+	padding: 50px;
+	}
+	
+
+#slide_1 .slide__inside  {
+	float: right;
+	height: 100%;
+}
+
+#slide_2 .slide__inside {
+		margin-top: 0;
+		float: left;
+	}
+	
+#slide_3 .slide__inside {
+		margin-top: 0;
+		float: right;
+	}
+	
+#slide_4 .slide__inside {
+		float: left;
+		margin-top: 0; }
 
 /* vers Slide 1 */
-#link1:target ~ #contener { top:0px; }
+#link1:target ~ #contener { top:-50px; }
 #link1:target ~ #contener #nav li:first-child a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
 #link1:target ~ #contener #slide1 { background-position: 50% 0%; }
 #link1:target ~ #contener #slide2 { background-position: 50% -35%; }
@@ -78,7 +111,7 @@ body {
 #link1:target ~ #contener #slide4 { background-position: 50% -60%; }
 
 /* vers Slide 2 */
-#link2:target ~ #contener { top:-1000px; }
+#link2:target ~ #contener { top:-1100px; }
 #link2:target ~ #contener #nav li:  nth-child(2)  + li a {text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603;}
 #link2:target ~ #contener #slide1 { background-position: 50% 36%; }
 #link2:target ~ #contener #slide2 { background-position: 50% 0%; }
@@ -94,11 +127,45 @@ body {
 #link3:target ~ #contener #slide4 { background-position: 50% 0%; }
 
 /* vers Slide 4 */
-#link4:target ~ #contener { top:-3150px; }
+#link4:target ~ #contener { top:-3200px; }
 #link4:target ~ #contener #nav li: last-child(4) a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
 #link4:target ~ #contener #slide1 { background-position: 50% 60%; }
 #link4:target ~ #contener #slide2 { background-position: 50% 35%; }
 #link4:target ~ #contener #slide3 { background-position: 50% 0%; } 
 #link4:target ~ #contener #slide4 { background-position: 50% 0%; }
+
+
+
+/* vers Slide 1 */
+#link1:target ~ #contener { top:-50px; }
+#link1:target ~ #contener #nav li:first-child a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
+#link1:target ~ #contener #slide_1 { background-position: 50% 0%; }
+#link1:target ~ #contener #slide_2 { background-position: 50% -35%; }
+#link1:target ~ #contener #slide_3 { background-position: 50% -60%; }
+#link1:target ~ #contener #slide_4 { background-position: 50% -60%; }
+
+/* vers Slide 2 */
+#link2:target ~ #contener { top:-1100px; }
+#link2:target ~ #contener #nav li:  nth-child(2)  + li a {text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603;}
+#link2:target ~ #contener #slide_1 { background-position: 50% 36%; }
+#link2:target ~ #contener #slide_2 { background-position: 50% 0%; }
+#link2:target ~ #contener #slide_3 { background-position: 50% -30%; }
+#link2:target ~ #contener #slide_4 { background-position: 50% -30%; }
+
+/* vers Slide 3 */
+#link3:target ~ #contener { top:-2150px; }
+#link3:target ~ #contener #nav li:nth-child(3) a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
+#link3:target ~ #contener #slide_1 { background-position: 50% 60%; }
+#link3:target ~ #contener #slide_2 { background-position: 50% 35%; }
+#link3:target ~ #contener #slide_3 { background-position: 50% 0%; }
+#link3:target ~ #contener #slide_4 { background-position: 50% 0%; }
+
+/* vers Slide 4 */
+#link4:target ~ #contener { top:-3200px; }
+#link4:target ~ #contener #nav li: last-child(4) a { text-shadow: 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603, 0 0 5px #eca603; }
+#link4:target ~ #contener #slide_1 { background-position: 50% 60%; }
+#link4:target ~ #contener #slide_2 { background-position: 50% 35%; }
+#link4:target ~ #contener #slide_3 { background-position: 50% 0%; } 
+#link4:target ~ #contener #slide_4 { background-position: 50% 0%; }
 
 
